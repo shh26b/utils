@@ -8,9 +8,7 @@ import shutil
 def format_name(file: str) -> str:
     file = re.sub(" ", "_", file)
     file = re.sub("-", "_", file)
-    i = file.find(".")
-    return file[: i] + "_" + file[i + 2:]
-
+    return file
 
 def mv_file(src: str, dst: str) -> None:
     shutil.move(src, dst)
