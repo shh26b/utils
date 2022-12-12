@@ -17,7 +17,7 @@ def mv_file(src: str, dst: str) -> None:
 
 
 if __name__ == "__main__":
-    rootdir = '/home/shh26b/src/dsa/stl'
+    rootdir = '.'
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
             formatted_file = format_name(file)
